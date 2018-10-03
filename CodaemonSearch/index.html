@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html data-ng-app="Codaemon">
+
+<head>
+	
+	<title>Codaemon Search</title>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="fragment" content="!" />
+	<meta name="description" content="Codaemon Search" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<!-- STYLE SHEETS -->
+	<link rel="shortcut icon" href="dist/images/favicon.png"/>
+	<link rel="stylesheet" href="components/jquery/css/jquery-ui.min.css" />
+	<link rel="stylesheet" href="components/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="components/angular/css/ng-table.min.css">
+	<link rel="stylesheet" href="components/angular/css/ngProgress.css">
+
+	<!-- EXTERNAL SCRIPTS -->
+	<script src="components/jquery/js/jquery-3.1.0.min.js"></script>
+	<script src="components/jquery/js/jquery-ui.min.js"></script>
+	<script src="components/angular/js/angular.min.js"></script>
+	<script src="components/angular/js/angular-route.min.js"></script>
+	<script src="components/angular/js/ng-table.min.js"></script>
+	<script src="components/angular/js/ngprogress.min.js"></script>
+	<script src="components/bootstrap/js/bootstrap.min.js"></script>
+
+	
+	<!-- APPLICATION JS -->
+	<script type="text/javascript" src="app.js"></script>
+	
+	<!-- APPLICATION CSS -->
+	<link rel="stylesheet" href="dist/css/app.css">
+	
+	<!-- APPLICATION CONTROLLER -->
+	<script type="text/javascript" src="controllers/MainCntrl.js"></script>
+	
+	<!-- APPLICATION CONTROLLER -->
+	<script type="text/javascript" src="services/searchService.js"></script>
+
+</head>
+
+<body data-ng-controller="MainCntrl">
+
+
+<!-- NAV BAR START -->
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="http://www.codaemonsoftwares.com"><img class="logo" alt="Codaemon" src="dist/images/logo.svg"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a data-ng-href="#search">Search</a></li>
+       </ul>
+     
+    </div>
+  </div>
+</nav>
+
+<!-- NAV BAR END -->
+
+
+<!-- BODY CONTENT START -->
+	<div class="bodyContent">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<ng-view></ng-view>
+			</div>
+		</div>
+	</div>
+<!-- BODY CONTENT END -->
+
+
+
+
+
+</body>
+
+
+
+</html>

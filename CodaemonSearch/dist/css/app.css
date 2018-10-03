@@ -1,0 +1,33 @@
+.logo{
+	height : 40px;
+}
+
+.navbar-brand{
+	padding-top:5px !important;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: #4CAF50;
+}
+
+.border{
+	border: 1px solid lightgray;
+    padding-top: 2%;
+}
+
+.marginTop{
+	    margin-top: 2%;
+}
+
+#ngProgress{
+	position: absolute !important;
+    margin: 18% !important;
+   /* width: 800px !important;*/
+}
